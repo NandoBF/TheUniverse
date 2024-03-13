@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://5cvhv6dpnb6h"]
+
+[node name="World" type="Node"]
+
+[node name="Services" type="Node" parent="."]
+
+[node name="Navigation" type="Node" parent="Services"]
+
+[node name="Environment" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
