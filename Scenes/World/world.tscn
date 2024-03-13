@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://5cvhv6dpnb6h"]
+[gd_scene load_steps=3 format=3 uid="uid://5cvhv6dpnb6h"]
+
+[ext_resource type="Script" path="res://Scenes/World/world.gd" id="1_eogwb"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_v6igy"]
 vertices = PackedVector2Array(1144, 8, 1156, 641, 1, 651, -2, 0)
@@ -8,6 +10,7 @@ source_geometry_group_name = &"navigation_polygon_source_group"
 cell_size = 64.0
 
 [node name="World" type="Node"]
+script = ExtResource("1_eogwb")
 
 [node name="Services" type="Node" parent="."]
 
