@@ -1,10 +1,20 @@
-[gd_scene format=3 uid="uid://5cvhv6dpnb6h"]
+[gd_scene load_steps=2 format=3 uid="uid://5cvhv6dpnb6h"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_v6igy"]
+vertices = PackedVector2Array(1144, 8, 1156, 641, 1, 651, -2, 0)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1154, -1, 1167, 651, -8, 662, -13, -10)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+cell_size = 64.0
 
 [node name="World" type="Node"]
 
 [node name="Services" type="Node" parent="."]
 
 [node name="Navigation" type="Node" parent="Services"]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Services/Navigation"]
+navigation_polygon = SubResource("NavigationPolygon_v6igy")
 
 [node name="Environment" type="Node2D" parent="."]
 
